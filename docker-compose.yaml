@@ -1,0 +1,23 @@
+version: "3.7"
+
+
+services:
+  db:
+    image: mongo:6.0
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    volumes:
+      - "data-volume:/data/db"
+    ports:
+      - "27017:27017"
+    environment:
+        MONGO_INITDB_ROOT_USERNAME: root
+        MONGO_INITDB_ROOT_PASSWORD: root
+        MONGO_INITDB_DATABASE: todo
+
+
+volumes:
+  data-volume:
