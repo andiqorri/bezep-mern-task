@@ -1,0 +1,19 @@
+.clock{
+    position: relative;
+    top: -100px;
+    
+
+}
+
+.clock h1{
+    /* border: 2px solid burlywood; */
+    /* border-radius: 15px; */
+    /* padding: 10px 0; */
+    /* background: linear-gradient(200deg,#80b8f3,#55e7fc); */
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 20px;
+}

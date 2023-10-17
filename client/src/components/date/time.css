@@ -1,0 +1,13 @@
+.last{
+    text-align: right;
+}
+
+
+.last2{
+    margin-top: 50px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 6px;   
+    text-align: right;
+    /* background: #C0C0C0; */
+}
